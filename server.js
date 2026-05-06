@@ -14,5 +14,4 @@ app.get('/get', (req, res) => {
     res.send(tmp);
 });
 
-// 改这里：原来是 3000，改成 process.env.PORT || 3000
 app.listen(process.env.PORT || 3000, () => console.log('已启动'));
